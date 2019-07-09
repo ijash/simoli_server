@@ -71,7 +71,7 @@ adminAuth: {
 }
 
 ```
-configure the password using the previously copied hashed password and save. More on on this [security page](https://nodered.org/docs/user-guide/runtime/securing-node-red).
+configure the password using the previously copied hashed password and save. More on on [this security page](https://nodered.org/docs/user-guide/runtime/securing-node-red).
 
 reboot for now using 
 ```bash
