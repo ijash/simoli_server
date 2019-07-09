@@ -39,7 +39,7 @@ sudo npm install -g node-red-admin --unsafe-perm
 ```
 To remotely administer a Node-RED instance, the tool must first be pointed at the Node-RED instance you want it to access. By default, it assumes ```http://localhost:1880```. To change that, use the ```target``` command:
 ```bash
-node-red-admin target http://node-red.example.com/admin
+node-red-admin target http://localhost:1880
 ```
 More info about node red admin are on [this guide](https://nodered.org/docs/user-guide/node-red-admin).
 
@@ -51,7 +51,9 @@ and enter desired password.
 then copy the output.
 
 Go to ```settings.js``` file on ```~/.node-red``` and open it with text editor.
-
+```bash
+nano ~/.node-red/settings.js
+```
 Then, go tho the line where the ```//Securing Node-RED``` is. Below it, Uncomment or add some lines to match something like this:
 ```js
 adminAuth: {
@@ -71,7 +73,7 @@ adminAuth: {
 }
 
 ```
-configure the password using the previously copied hashed password and save. More on on [this security page](https://nodered.org/docs/user-guide/runtime/securing-node-red).
+configure the password using the previously copied hashed password and save. More on [this security page](https://nodered.org/docs/user-guide/runtime/securing-node-red).
 
 reboot for now using 
 ```bash
