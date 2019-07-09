@@ -5,7 +5,7 @@
 This installation procedure is made for Ubuntu 18.04.
 First, update the system.
 ```bash
-sudo apt update
+sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y
 ```
 then install nodejs and all other dependencies.
 ```bash
@@ -71,7 +71,7 @@ adminAuth: {
 }
 
 ```
-configure the password using the previously copied hashed password and save. More on on this [security](https://nodered.org/docs/user-guide/runtime/securing-node-red) page.
+configure the password using the previously copied hashed password and save. More on on this [security page](https://nodered.org/docs/user-guide/runtime/securing-node-red).
 
 reboot for now using 
 ```bash
@@ -79,6 +79,52 @@ sudo reboot now
 ```
 node-red should now be using password.
 
+## Nginx for reverse proxy
 
-
-# 
+Install nginx
+```bash
+sudo apt install curl gnupg2 ca-certificates lsb-release -y
+echo "deb http://nginx.org/packages/ubuntu `lsb_release -cs` nginx"     | sudo tee /etc/apt/sources.list.d/nginx.list
+curl -fsSL https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
+sudo apt-key fingerprint ABF5BD827BD9BF62
+sudo apt update
+sudo apt install nginx
+```
+to check nginx status:
+```bash
+sudo systemctl status nginx
+```
+now open nginx config using with administrative privileges.
+```bash
+sudo nano /etc/nginx/conf.d/default.conf
+```
+add these under inside `location /` block.
+```nginx
+location /nodered/ {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+    proxy_set_header Host $http_host;
+    proxy_http_version 1.1;
+    proxy_pass http://localhost:1880;
+}
+```
+these are optional, configure `/your_location/` to fit your needs.
+```nginx
+location /your_location/ {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+    proxy_set_header Host $http_host;
+    proxy_http_version 1.1;
+    proxy_pass http://localhost:1880/your_location;
+}
+```
+to test the nginx configuration file, run:
+```bash
+sudo nginx -t
+```
+if successful, do restart nginx using the following command:
+```bash
+sudo systemctl restart nginx
+```
