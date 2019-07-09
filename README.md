@@ -147,6 +147,24 @@ sudo apt install php-fpm php-mysql phpmyadmin -y
 The installer will ask you choose the web server, skip it by pressing`tab` and `Enter`.
 Next, about the *dbconfig-common* tool. Select `Yes` and hit `Enter`. Then, enter a password of your choice.
 
+## MQTT Broker Installation (Mosquitto)
+
+Run these commands:
+```bash
+sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa -y
+sudo apt-get update
+sudo apt-get install mosquitto mosquitto-clients -y
+```
+And make sure mosquitto is available on boot:
+```bash
+sudo systemctl enable mosquitto
+sudo systemctl start mosquitto
+```
+to check the status, use this command:
+```bash
+sudo systemctl status mosquitto
+```
+by default, mosquitto will use port `1883`. Please this [documentation](https://www.eclipse.org/mosquitto/man/mosquitto-8.php) for more about mosquitto.
 
 ## Nginx setting
 
@@ -161,7 +179,7 @@ server {
         listen 80;
         root /var/www/html;
         index index.php index.html index.htm index.nginx-debian.html;
-        server_name ;
+        server_name _;
         include snippets/phpmyadmin.conf;
         
 
@@ -233,12 +251,12 @@ location /your_location/ {
     proxy_pass http://localhost:1880/your_location/;
 }
 ```
-these too are **ptional** to make nginx read the `sites-available` by linking the directory to `sites-enabled`.
+these too are **optional** to make nginx read the `sites-available` by linking the directory to `sites-enabled`.
 ```bash
 sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/    
 ```
 
-### finishing it up
+### Finishing it up
 To test the nginx configuration file, run:
 ```bash
 sudo nginx -t
