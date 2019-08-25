@@ -10,7 +10,7 @@ sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo
 ```
 
 ## Mosquitto
-Install mosquitto as mqtt broker
+Install mosquitto as mqtt broker.
 
 ```bash
 sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
@@ -18,16 +18,17 @@ sudo apt update -y
 sudo apt install -y mosquitto mosquitto-clients
 ```
 
-and run these command to start mosquitto
+Run these command to start mosquitto.
 ```bash
 mosquitto -v
 ```
 
-if you got error message like this it probably because mosquitto already running as daemon
+If you got error message like this
 
 ```bash
 Error: Address already in use
 ```
+It probably because mosquitto already running as daemon
 
 Check if mosquitto automaticly running as daemon
 
@@ -36,31 +37,35 @@ ps -aux | grep mosquitto
 pgrep mosquitto
 ```
 
-Replace PID with id that you got from before. If you ran it and don't get any id, it means mosquitto isn't running as daemon
+Kill mosquitto
+
+Replace PID with id that you got from before. If you ran it and don't get any id, it means mosquitto isn't running as daemon.
 
 ```bash
 kill -9 PID
 ```
 
-You could also start mosquitto with custom configuration. The default configuration should be on /etc/mosquitto/mosquitto.conf. However you could also copy this configuration file to your home directory if you want use it for testing
+You could also start mosquitto with custom configuration. The default configuration should be on /etc/mosquitto/mosquitto.conf.
 
 ```bash
 mosquitto -c /etc/mosquitto/mosquitto.conf
 ```
 
-If you want try to run mosquitto with listen and subscibe thing, use command below to listening to client connection
+However you might considering copy this configuration file to your home directory if you want use it for testing.
+
+If you want try to run mosquitto with listen and subscibe thing, use command below to listening to client connection.
 
 ```bash
 mosquitto -v
 ```
 
-And on another window/terminal run these command to subscirbing to some topic
+and on another window/terminal run these command to subscirbing to some topic.
 
 ```bash
 mosquitto_sub -h YourIP -p 1883 -v -t 'topic/#'
 ```
 
-Now go back to first window/terminal and you could see there is a new connection
+Now go back to first window/terminal and you could see there is a new connection.
 
 ## NodeJS
 
