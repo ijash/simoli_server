@@ -42,7 +42,7 @@ you will see something like this:
 sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u vm --hp /home/vm
 ```
 
-copy it and run as a shell command.
+copy the output and run as a shell command.
 
 ### Change NPM Ownership
 
