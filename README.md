@@ -1,16 +1,15 @@
 # Simoli Server
 
 ## Installation
-
+### Preparation
 This installation procedure is made for Ubuntu 18.04.
 First, update the system.
 
 ```bash
 sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y
 ```
-
-## Mosquitto
-Install mosquitto as mqtt broker.
+### Mosquitto
+Install mosquitto as a primary MQTT broker.
 
 ```bash
 sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
@@ -18,56 +17,54 @@ sudo apt update -y
 sudo apt install -y mosquitto mosquitto-clients
 ```
 
-Run these command to start mosquitto.
+Run this command to start mosquitto.
 ```bash
 mosquitto -v
 ```
 
-If you got error message like this
+If you get error message such as this:
 
 ```bash
 Error: Address already in use
 ```
-It probably because mosquitto already running as daemon
+It's because mosquitto already running as daemon.
 
-Check if mosquitto automaticly running as daemon
+To check if mosquitto automaticly running as daemon, run these commands:
 
 ```bash
 ps -aux | grep mosquitto
 pgrep mosquitto
 ```
 
-Kill mosquitto
-
-Replace PID with id that you got from before. If you ran it and don't get any id, it means mosquitto isn't running as daemon.
-
+Now, kill mosquitto
 ```bash
 kill -9 PID
 ```
+_Replace `PID` to match current mosquitto PID from the previous bash output. If you ran it and don't get any PID, it means mosquitto isn't running as daemon._
 
-You could also start mosquitto with custom configuration. The default configuration should be on /etc/mosquitto/mosquitto.conf.
+You could also start mosquitto with custom configuration. The default configuration should be on `/etc/mosquitto/mosquitto.conf`.
 
 ```bash
 mosquitto -c /etc/mosquitto/mosquitto.conf
 ```
 
-However you might considering copy this configuration file to your home directory if you want use it for testing.
+However you might want to consider copying this configuration file to your home directory if you want to use it for testing.
 
-If you want try to run mosquitto with listen and subscibe thing, use command below to listening to client connection.
+If you want try to run mosquitto with listen and subscibe method, use command below to listen to client connection.
 
 ```bash
 mosquitto -v
 ```
 
-and on another window/terminal run these command to subscirbing to some topic.
+and on another window/terminal run these command to subscribe to some topic.
 
 ```bash
 mosquitto_sub -h YourIP -p 1883 -v -t 'topic/#'
 ```
 
-Now go back to first window/terminal and you could see there is a new connection.
+Now go back to first window/terminal and you will see a new connection.
 
-## NodeJS
+### NodeJS
 
 Install nodejs and all other dependencies.
 
@@ -75,6 +72,8 @@ Install nodejs and all other dependencies.
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt install -y nodejs gcc g++ make build-essential
 ```
+
+### Node Red
 
 After Nodejs installed, then install nodered.
 
