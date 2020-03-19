@@ -243,7 +243,7 @@ sudo mysql
 and enter:
 
 ```sql
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+UPDATE mysql.user SET Password=PASSWORD('your_new_password') WHERE User='root'; 
 ```
 
 please note that `'password'` is your own preferences.
