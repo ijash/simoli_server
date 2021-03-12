@@ -24,7 +24,7 @@ mosquitto -v
 
 If you get error message such as this:
 
-```bash
+```
 Error: Address already in use
 ```
 It's because mosquitto already running as daemon.
@@ -33,16 +33,18 @@ To check if mosquitto automaticly running as daemon, run these commands:
 
 ```bash
 ps -aux | grep mosquitto
+```
+or
+```bash
 pgrep mosquitto
 ```
 
-Now, kill mosquitto
+Now, to test the program, kill mosquitto
 ```bash
-kill -9 PID
+sudo pkill mosquitto
 ```
-_Replace `PID` to match current mosquitto PID from the previous bash output. If you ran it and don't get any PID, it means mosquitto isn't running as daemon._
 
-You could also start mosquitto with custom configuration. The default configuration should be on `/etc/mosquitto/mosquitto.conf`.
+You could also start mosquitto with custom configuration. The default configuration should be on `/etc/mosquitto/mosquitto.conf`. this command will load the _.conf_ file
 
 ```bash
 mosquitto -c /etc/mosquitto/mosquitto.conf
@@ -56,11 +58,15 @@ If you want try to run mosquitto with listen and subscibe method, use command be
 mosquitto -v
 ```
 
-and on another window/terminal run these command to subscribe to some topic.
+it will run as daemon.
+
+And on another window/terminal run these command to subscribe to some topic.
 
 ```bash
-mosquitto_sub -h YourIP -p 1883 -v -t 'topic/#'
+mosquitto_sub -h localhost -p 1883 -v -t 'topic/#'
 ```
+_`localhost` means the server's IP where mosquitto is running, you can change it accordingly. In this case the broker is in `localhost`._   
+more on this [link](https://stackoverflow.com/a/26716393) for testing. 
 
 Now go back to first window/terminal and you will see a new connection.
 
@@ -94,6 +100,7 @@ pm2 start /usr/bin/node-red -- -v
 pm2 save
 pm2 startup systemd
 ```
+_if `pm2` command not found, check [this](https://stackoverflow.com/a/54996436) link._
 
 you will see something like this:
 
@@ -103,6 +110,7 @@ sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -
 
 copy the output and run as a shell command.
 
+This [link](https://nodered.org/docs/faq/starting-node-red-on-boot) is the official tutorial.
 ### Change NPM Ownership
 
 Some Node-RED plugins require npm to install, it'll give error if npm is not owned by the user. Therefore, restore ownership of the user's npm related folders, to the current user, like this:
@@ -120,7 +128,7 @@ Now, we need to secure the Node-RED with password. To do that, first we will nee
 sudo npm install -g node-red-admin --unsafe-perm
 ```
 
-To remotely administer a Node-RED instance, the tool must first be pointed at the Node-RED instance you want it to access. By default, it assumes `http://localhost:1880`. To change that, use the `target` command:
+To remotely administer a Node-RED instance, the tool must first be pointed at the Node-RED instance you want it to access. By default, it assumes `http://localhost:1880`. To change that, replace the `target` argument to another address:
 
 ```bash
 node-red-admin target http://localhost:1880
