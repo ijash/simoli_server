@@ -1,0 +1,1581 @@
+[
+    {
+        "id": "4f3004db.7b66bc",
+        "type": "tab",
+        "label": "Demo Flow Fix",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "2a08aebc.39ea02",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "9cc2513b.3ed16",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "7db5f3c3.81584c",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "Node-RED",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "Node-RED",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "ea04eda5.668a8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "24",
+        "collapse": false
+    },
+    {
+        "id": "16bbdd68.081193",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "ed957222.66e4",
+        "type": "ui_group",
+        "z": "",
+        "name": "F.F.B. Scrapper Conveyor",
+        "tab": "6487ab6d.ad8dd4",
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "845e9cff.5c3d8",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "Node-RED",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "Node-RED",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "f511fd39.bf3c4",
+        "type": "ui_group",
+        "z": "",
+        "name": "Sterilizer 1",
+        "tab": "6487ab6d.ad8dd4",
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "20a458a4.b55f98",
+        "type": "ui_group",
+        "z": "",
+        "name": "Sterilizer 2",
+        "tab": "6487ab6d.ad8dd4",
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "818930a8.f8769",
+        "type": "ui_group",
+        "z": "",
+        "name": "Thresher 1",
+        "tab": "6487ab6d.ad8dd4",
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "50600fe3.4a0ea",
+        "type": "ui_group",
+        "z": "",
+        "name": "Thresher 2",
+        "tab": "6487ab6d.ad8dd4",
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "ef6f747d.1cd828",
+        "type": "ui_group",
+        "z": "",
+        "name": "Digester",
+        "tab": "6487ab6d.ad8dd4",
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "d68756d3.3a5e88",
+        "type": "ui_group",
+        "z": "",
+        "name": "Screw Press 1",
+        "tab": "6487ab6d.ad8dd4",
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "4899e7b.beb6818",
+        "type": "ui_group",
+        "z": "",
+        "name": "Screw Press 2",
+        "tab": "6487ab6d.ad8dd4",
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "6487ab6d.ad8dd4",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Pabrik Kelapa Sawit",
+        "icon": "",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d05820fa.375da",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#2f624f",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#2f624f",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#2f624f",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#489679",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#2f624f",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Simoli",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "748efcbb.e41534",
+        "type": "ui_group",
+        "z": "",
+        "name": "Storage Tank",
+        "tab": "6487ab6d.ad8dd4",
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "78858d0.0533274",
+        "type": "comment",
+        "z": "4f3004db.7b66bc",
+        "name": "out topic group(1-8)",
+        "info": "",
+        "x": 170,
+        "y": 60,
+        "wires": [],
+        "icon": "node-red/bridge.png"
+    },
+    {
+        "id": "fc62573e.dec7d8",
+        "type": "ui_template",
+        "z": "4f3004db.7b66bc",
+        "group": "ea04eda5.668a8",
+        "name": "Logo_Clock",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<script id=\"clockScript1\" type=\"text/javascript\">\n    var clockInterval;\n    $(function () {\n        if (clockInterval) return;\n\n        //add logo\n        var div1 = $('<div/>');\n        var logo = new Image();\n\n        logo.src = '/simoli-master-logo-sm.png'\n        logo.height = 60;\n        div1[0].style.margin = '5px auto';\n\n        div1.append(logo);\n\n        //add clock\n        var div2 = $('<div/>');\n        var p = $('<p/>');\n\n        div2.append(p);\n        div2[0].style.margin = '5px';\n\n        function displayTime() {\n            p.text(new Date().toLocaleString());\n        }\n        \n        clockInterval = setInterval(displayTime, 1000);\n\n        //add to toolbar when it's available\n        var addToToolbarTimer;\n        \n        function addToToolbar() {\n            var toolbar = $('.md-toolbar-tools');\n            \n            if(!toolbar.length) return;\n            \n            toolbar.append(div1);\n            toolbar.append(div2);\n            clearInterval(addToToolbarTimer);\n        }\n        addToToolbarTimer = setInterval(addToToolbar, 100);\n    });\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "global",
+        "x": 290,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80e1e3f3.c00b8",
+        "type": "debug",
+        "z": "4f3004db.7b66bc",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 630,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "7ffcb3cb.4771dc",
+        "type": "mqtt in",
+        "z": "4f3004db.7b66bc",
+        "name": "PKS Topic",
+        "topic": "pks/#",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "16bbdd68.081193",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "fc62573e.dec7d8"
+            ]
+        ]
+    },
+    {
+        "id": "ef773431.9a9d78",
+        "type": "ui_template",
+        "z": "4f3004db.7b66bc",
+        "group": "ed957222.66e4",
+        "name": "HTML Card",
+        "order": 1,
+        "width": "5",
+        "height": "6",
+        "format": "\n<div ng-bind-html=\"(msg.payload==undefined)?'belum ada data..':(msg.payload==0)?msg.deviceName + ' mati':msg.deviceName + ' hidup'\"></div>\n<span style=\"\n  margin: 0 auto;\n  width: 24px;\n  max-width:24px;\n  height:24px;\n  max-height:24px;\n  background-color: {{(msg.payload==undefined)?'#949494de':(msg.payload === '0') ? '#F00000' : '#ABFF00'}};\n  border-radius: 50%;\n  box-shadow: {{(msg.payload==undefined)?'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(0,0,0) 0px -1px 9px inset':(msg.payload === '0') ? 'rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset rgb(68, 19, 19) 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px':'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(48,71,1) 0px -1px 9px inset, rgb(137,255,0) 0px 2px 12px'}}\">\n    \n</span>\n\n<br>\n\n<img src=\"/pks/ffb_scrapper_conveyor.png\"  height=\"auto\">",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 530,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ec535978.dff728",
+        "type": "mqtt in",
+        "z": "4f3004db.7b66bc",
+        "name": "Sensor 1",
+        "topic": "pks/bunch_reception/ffb_scrapper_conveyor",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "845e9cff.5c3d8",
+        "x": 80,
+        "y": 280,
+        "wires": [
+            [
+                "2ed8b98.fa40646",
+                "f43d3994.d0c918"
+            ]
+        ]
+    },
+    {
+        "id": "652850cc.b35",
+        "type": "mqtt in",
+        "z": "4f3004db.7b66bc",
+        "name": "Sensor 2",
+        "topic": "pks/bunch_reception/sterilizer_1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "845e9cff.5c3d8",
+        "x": 80,
+        "y": 440,
+        "wires": [
+            [
+                "f7c569b9.a2c798",
+                "c3a2894d.843468"
+            ]
+        ]
+    },
+    {
+        "id": "4c11ab29.0b09c4",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "string for TTS",
+        "func": "msg.payload = (msg.payload==\"0\")?`F F B Scrapper conveyor mati`:`F F B Scrapper conveyor} hidup`\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 500,
+        "y": 360,
+        "wires": [
+            [
+                "36462c40.d851b4"
+            ]
+        ],
+        "info": "Generate string for text to speech"
+    },
+    {
+        "id": "8502d2e8.7d33a",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "",
+        "func": "\nmsg.payload = (msg.payload=='0'? '1':'0');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "80e1e3f3.c00b8"
+            ]
+        ]
+    },
+    {
+        "id": "2ed8b98.fa40646",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "Add msg.deviceName",
+        "func": "function capitalizeFirstLetter(string) {\n    return string.charAt(0).toUpperCase() + string.slice(1);\n}\n\nmsg.deviceName = msg.topic.split('/').pop(-1).replace(/_/g,' ');\nmsg.deviceName = capitalizeFirstLetter(msg.deviceName);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 280,
+        "wires": [
+            [
+                "ef773431.9a9d78",
+                "4c11ab29.0b09c4"
+            ]
+        ]
+    },
+    {
+        "id": "8153440d.f769b8",
+        "type": "ui_template",
+        "z": "4f3004db.7b66bc",
+        "group": "f511fd39.bf3c4",
+        "name": "HTML Card",
+        "order": 1,
+        "width": "5",
+        "height": "6",
+        "format": "\n<div ng-bind-html=\"(msg.payload==undefined)?'belum ada data..':(msg.payload==0)?msg.deviceName + ' mati':msg.deviceName + ' hidup'\"></div>\n<span style=\"\n  margin: 0 auto;\n  width: 24px;\n  max-width:24px;\n  height: 24px;\n  max-height:24px;\n  background-color: {{(msg.payload==undefined)?'#949494de':(msg.payload === '0') ? '#F00000' : '#ABFF00'}};\n  border-radius: 50%;\n  box-shadow: {{(msg.payload==undefined)?'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(0,0,0) 0px -1px 9px inset':(msg.payload === '0') ? 'rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset rgb(68, 19, 19) 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px':'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(48,71,1) 0px -1px 9px inset, rgb(137,255,0) 0px 2px 12px'}}\">\n    \n</span>\n\n<br>\n\n<img src=\"/pks/sterilizer.png\"  height=\"150\">",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 530,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "550f8d55.60f294",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "string for TTS",
+        "func": "msg.payload = (msg.payload==\"0\")?`${msg.deviceName} mati`:`${msg.deviceName} hidup`\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 500,
+        "y": 520,
+        "wires": [
+            [
+                "36462c40.d851b4"
+            ]
+        ],
+        "info": "Generate string for text to speech"
+    },
+    {
+        "id": "f7c569b9.a2c798",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "Add msg.deviceName",
+        "func": "function capitalizeFirstLetter(string) {\n    return string.charAt(0).toUpperCase() + string.slice(1);\n}\n\nmsg.deviceName = msg.topic.split('/').pop(-1).replace(/_/g,' ');\nmsg.deviceName = capitalizeFirstLetter(msg.deviceName);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 440,
+        "wires": [
+            [
+                "8153440d.f769b8",
+                "550f8d55.60f294"
+            ]
+        ]
+    },
+    {
+        "id": "9b49b273.6ac5d",
+        "type": "mqtt in",
+        "z": "4f3004db.7b66bc",
+        "name": "Sensor 3",
+        "topic": "pks/bunch_reception/sterilizer_2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "845e9cff.5c3d8",
+        "x": 80,
+        "y": 600,
+        "wires": [
+            [
+                "be276662.458ef8",
+                "6eaffb66.279c34"
+            ]
+        ]
+    },
+    {
+        "id": "7962302c.6458d",
+        "type": "mqtt in",
+        "z": "4f3004db.7b66bc",
+        "name": "Sensor 4",
+        "topic": "pks/threshing/thresher_1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "845e9cff.5c3d8",
+        "x": 80,
+        "y": 760,
+        "wires": [
+            [
+                "a5840575.58aa48",
+                "23d6f661.f4ae5a"
+            ]
+        ]
+    },
+    {
+        "id": "5cb3bd0.bbc5f44",
+        "type": "mqtt in",
+        "z": "4f3004db.7b66bc",
+        "name": "Sensor 5",
+        "topic": "pks/threshing/thresher_2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "845e9cff.5c3d8",
+        "x": 80,
+        "y": 920,
+        "wires": [
+            [
+                "d2bef6d1.1c6d58",
+                "b8d0d36.450db3"
+            ]
+        ]
+    },
+    {
+        "id": "a887eba8.b53448",
+        "type": "mqtt in",
+        "z": "4f3004db.7b66bc",
+        "name": "Sensor 6",
+        "topic": "pks/pressing/digester",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "845e9cff.5c3d8",
+        "x": 80,
+        "y": 1080,
+        "wires": [
+            [
+                "621f9b15.cec024",
+                "c4b151e0.af015"
+            ]
+        ]
+    },
+    {
+        "id": "5f6b17e4.efb6f8",
+        "type": "mqtt in",
+        "z": "4f3004db.7b66bc",
+        "name": "Sensor 7",
+        "topic": "pks/pressing/screw_press_1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "845e9cff.5c3d8",
+        "x": 80,
+        "y": 1240,
+        "wires": [
+            [
+                "27f55cc3.9a6134",
+                "ba760871.6acda8"
+            ]
+        ]
+    },
+    {
+        "id": "65100126.93fd1",
+        "type": "ui_template",
+        "z": "4f3004db.7b66bc",
+        "group": "20a458a4.b55f98",
+        "name": "HTML Card",
+        "order": 1,
+        "width": "5",
+        "height": "6",
+        "format": "\n<div ng-bind-html=\"(msg.payload==undefined)?'belum ada data..':(msg.payload==0)?msg.deviceName + ' mati':msg.deviceName + ' hidup'\"></div>\n<span style=\"\n  margin: 0 auto;\n  width: 24px;\n  max-width:24px;\n  height: 24px;\n  max-height:24px;\n  background-color: {{(msg.payload==undefined)?'#949494de':(msg.payload === '0') ? '#F00000' : '#ABFF00'}};\n  border-radius: 50%;\n  box-shadow: {{(msg.payload==undefined)?'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(0,0,0) 0px -1px 9px inset':(msg.payload === '0') ? 'rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset rgb(68, 19, 19) 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px':'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(48,71,1) 0px -1px 9px inset, rgb(137,255,0) 0px 2px 12px'}}\">\n    \n</span>\n\n<br>\n\n<img src=\"/pks/sterilizer.png\"  height=\"150\">",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "templateScope": "local",
+        "x": 530,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38a39fd5.34817",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "string for TTS",
+        "func": "msg.payload = (msg.payload==\"0\")?`${msg.deviceName} mati`:`${msg.deviceName} hidup`\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 500,
+        "y": 680,
+        "wires": [
+            [
+                "36462c40.d851b4"
+            ]
+        ],
+        "info": "Generate string for text to speech"
+    },
+    {
+        "id": "be276662.458ef8",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "Add msg.deviceName",
+        "func": "function capitalizeFirstLetter(string) {\n    return string.charAt(0).toUpperCase() + string.slice(1);\n}\n\nmsg.deviceName = msg.topic.split('/').pop(-1).replace(/_/g,' ');\nmsg.deviceName = capitalizeFirstLetter(msg.deviceName);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 600,
+        "wires": [
+            [
+                "65100126.93fd1",
+                "38a39fd5.34817"
+            ]
+        ]
+    },
+    {
+        "id": "24c8e945.73de46",
+        "type": "ui_template",
+        "z": "4f3004db.7b66bc",
+        "group": "818930a8.f8769",
+        "name": "HTML Card",
+        "order": 1,
+        "width": "5",
+        "height": "6",
+        "format": "\n<div ng-bind-html=\"(msg.payload==undefined)?'belum ada data..':(msg.payload==0)?msg.deviceName + ' mati':msg.deviceName + ' hidup'\"></div>\n<span style=\"\n  margin: 0 auto;\n  width: 24px;\n  max-width:24px;\n  height: 24px;\n  max-height:24px;\n  background-color: {{(msg.payload==undefined)?'#949494de':(msg.payload === '0') ? '#F00000' : '#ABFF00'}};\n  border-radius: 50%;\n  box-shadow: {{(msg.payload==undefined)?'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(0,0,0) 0px -1px 9px inset':(msg.payload === '0') ? 'rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset rgb(68, 19, 19) 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px':'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(48,71,1) 0px -1px 9px inset, rgb(137,255,0) 0px 2px 12px'}}\">\n    \n</span>\n\n<br>\n\n<img src=\"/pks/thresher.png\"  height=\"150\">",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 530,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "639adc77.041684",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "string for TTS",
+        "func": "msg.payload = (msg.payload==\"0\")?`${msg.deviceName} mati`:`${msg.deviceName} hidup`\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 500,
+        "y": 840,
+        "wires": [
+            [
+                "36462c40.d851b4"
+            ]
+        ],
+        "info": "Generate string for text to speech"
+    },
+    {
+        "id": "a5840575.58aa48",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "Add msg.deviceName",
+        "func": "function capitalizeFirstLetter(string) {\n    return string.charAt(0).toUpperCase() + string.slice(1);\n}\n\nmsg.deviceName = msg.topic.split('/').pop(-1).replace(/_/g,' ');\nmsg.deviceName = capitalizeFirstLetter(msg.deviceName);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 760,
+        "wires": [
+            [
+                "24c8e945.73de46",
+                "639adc77.041684"
+            ]
+        ]
+    },
+    {
+        "id": "d8fbbc3d.f1107",
+        "type": "ui_template",
+        "z": "4f3004db.7b66bc",
+        "group": "50600fe3.4a0ea",
+        "name": "HTML Card",
+        "order": 1,
+        "width": "5",
+        "height": "6",
+        "format": "\n<div ng-bind-html=\"(msg.payload==undefined)?'belum ada data..':(msg.payload==0)?msg.deviceName + ' mati':msg.deviceName + ' hidup'\"></div>\n<span style=\"\n  margin: 0 auto;\n  width: 24px;\n  max-width:24px;\n  height: 24px;\n  max-height:24px;\n  background-color: {{(msg.payload==undefined)?'#949494de':(msg.payload === '0') ? '#F00000' : '#ABFF00'}};\n  border-radius: 50%;\n  box-shadow: {{(msg.payload==undefined)?'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(0,0,0) 0px -1px 9px inset':(msg.payload === '0') ? 'rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset rgb(68, 19, 19) 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px':'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(48,71,1) 0px -1px 9px inset, rgb(137,255,0) 0px 2px 12px'}}\">\n    \n</span>\n\n<br>\n\n<img src=\"/pks/thresher.png\"  height=\"150\">",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 530,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "64e9ecc5.001bd4",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "string for TTS",
+        "func": "msg.payload = (msg.payload==\"0\")?`${msg.deviceName} mati`:`${msg.deviceName} hidup`\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 500,
+        "y": 1000,
+        "wires": [
+            [
+                "36462c40.d851b4"
+            ]
+        ],
+        "info": "Generate string for text to speech"
+    },
+    {
+        "id": "d2bef6d1.1c6d58",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "Add msg.deviceName",
+        "func": "function capitalizeFirstLetter(string) {\n    return string.charAt(0).toUpperCase() + string.slice(1);\n}\n\nmsg.deviceName = msg.topic.split('/').pop(-1).replace(/_/g,' ');\nmsg.deviceName = capitalizeFirstLetter(msg.deviceName);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 920,
+        "wires": [
+            [
+                "d8fbbc3d.f1107",
+                "64e9ecc5.001bd4"
+            ]
+        ]
+    },
+    {
+        "id": "4b7109fb.0120d8",
+        "type": "ui_template",
+        "z": "4f3004db.7b66bc",
+        "group": "ef6f747d.1cd828",
+        "name": "HTML Card",
+        "order": 1,
+        "width": "5",
+        "height": "6",
+        "format": "\n<div ng-bind-html=\"(msg.payload==undefined)?'belum ada data..':(msg.payload==0)?msg.deviceName + ' mati':msg.deviceName + ' hidup'\"></div>\n<span style=\"\n  margin: 0 auto;\n  width: 24px;\n  max-width:24px;\n  height: 24px;\n  max-height:24px;\n  background-color: {{(msg.payload==undefined)?'#949494de':(msg.payload === '0') ? '#F00000' : '#ABFF00'}};\n  border-radius: 50%;\n  box-shadow: {{(msg.payload==undefined)?'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(0,0,0) 0px -1px 9px inset':(msg.payload === '0') ? 'rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset rgb(68, 19, 19) 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px':'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(48,71,1) 0px -1px 9px inset, rgb(137,255,0) 0px 2px 12px'}}\">\n    \n</span>\n\n<br>\n\n<img src=\"/pks/digester.png\"  height=\"150\">",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 530,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ac67b48.526558",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "string for TTS",
+        "func": "msg.payload = (msg.payload==\"0\")?`${msg.deviceName} mati`:`${msg.deviceName} hidup`\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 500,
+        "y": 1160,
+        "wires": [
+            [
+                "36462c40.d851b4"
+            ]
+        ],
+        "info": "Generate string for text to speech"
+    },
+    {
+        "id": "621f9b15.cec024",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "Add msg.deviceName",
+        "func": "function capitalizeFirstLetter(string) {\n    return string.charAt(0).toUpperCase() + string.slice(1);\n}\n\nmsg.deviceName = msg.topic.split('/').pop(-1).replace(/_/g,' ');\nmsg.deviceName = capitalizeFirstLetter(msg.deviceName);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 1080,
+        "wires": [
+            [
+                "4b7109fb.0120d8",
+                "9ac67b48.526558"
+            ]
+        ]
+    },
+    {
+        "id": "8f28dcf0.5358b",
+        "type": "ui_template",
+        "z": "4f3004db.7b66bc",
+        "group": "d68756d3.3a5e88",
+        "name": "HTML Card",
+        "order": 1,
+        "width": "5",
+        "height": "6",
+        "format": "\n<div ng-bind-html=\"(msg.payload==undefined)?'belum ada data..':(msg.payload==0)?msg.deviceName + ' mati':msg.deviceName + ' hidup'\"></div>\n<span style=\"\n  margin: 0 auto;\n  width: 24px;\n  max-width:24px;\n  height: 24px;\n  max-height:24px;\n  background-color: {{(msg.payload==undefined)?'#949494de':(msg.payload === '0') ? '#F00000' : '#ABFF00'}};\n  border-radius: 50%;\n  box-shadow: {{(msg.payload==undefined)?'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(0,0,0) 0px -1px 9px inset':(msg.payload === '0') ? 'rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset rgb(68, 19, 19) 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px':'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(48,71,1) 0px -1px 9px inset, rgb(137,255,0) 0px 2px 12px'}}\">\n    \n</span>\n\n<br>\n\n<img src=\"/pks/screw_press.png\"  height=\"150\">",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 530,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa0194.78df2e7",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "string for TTS",
+        "func": "msg.payload = (msg.payload==\"0\")?`${msg.deviceName} mati`:`${msg.deviceName} hidup`\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 500,
+        "y": 1320,
+        "wires": [
+            [
+                "36462c40.d851b4"
+            ]
+        ],
+        "info": "Generate string for text to speech"
+    },
+    {
+        "id": "27f55cc3.9a6134",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "Add msg.deviceName",
+        "func": "function capitalizeFirstLetter(string) {\n    return string.charAt(0).toUpperCase() + string.slice(1);\n}\n\nmsg.deviceName = msg.topic.split('/').pop(-1).replace(/_/g,' ');\nmsg.deviceName = capitalizeFirstLetter(msg.deviceName);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 1240,
+        "wires": [
+            [
+                "8f28dcf0.5358b",
+                "fa0194.78df2e7"
+            ]
+        ]
+    },
+    {
+        "id": "9201156a.8ab648",
+        "type": "comment",
+        "z": "4f3004db.7b66bc",
+        "name": "Fresh Fruit Bunch (FFB) Scrapper Conveyor",
+        "info": "",
+        "x": 190,
+        "y": 340,
+        "wires": [],
+        "icon": "node-red/db.png"
+    },
+    {
+        "id": "eee51cb6.333a6",
+        "type": "comment",
+        "z": "4f3004db.7b66bc",
+        "name": "Sterilizer 2",
+        "info": "",
+        "x": 160,
+        "y": 660,
+        "wires": [],
+        "icon": "node-red/db.png"
+    },
+    {
+        "id": "f408a511.e51c58",
+        "type": "comment",
+        "z": "4f3004db.7b66bc",
+        "name": "Sterilizer 1",
+        "info": "",
+        "x": 160,
+        "y": 500,
+        "wires": [],
+        "icon": "node-red/db.png"
+    },
+    {
+        "id": "1b950603.d5d0ca",
+        "type": "comment",
+        "z": "4f3004db.7b66bc",
+        "name": "Thresher 1",
+        "info": "",
+        "x": 160,
+        "y": 820,
+        "wires": [],
+        "icon": "node-red/db.png"
+    },
+    {
+        "id": "b38762b8.81e56",
+        "type": "comment",
+        "z": "4f3004db.7b66bc",
+        "name": "Thresher 2",
+        "info": "",
+        "x": 160,
+        "y": 980,
+        "wires": [],
+        "icon": "node-red/db.png"
+    },
+    {
+        "id": "6d5c7f8b.2f41a",
+        "type": "comment",
+        "z": "4f3004db.7b66bc",
+        "name": "Digester",
+        "info": "",
+        "x": 160,
+        "y": 1140,
+        "wires": [],
+        "icon": "node-red/db.png"
+    },
+    {
+        "id": "37f115d3.1cde0a",
+        "type": "comment",
+        "z": "4f3004db.7b66bc",
+        "name": "Screw Press 1",
+        "info": "",
+        "x": 170,
+        "y": 1300,
+        "wires": [],
+        "icon": "node-red/db.png"
+    },
+    {
+        "id": "b5684ddf.d4ad6",
+        "type": "mqtt in",
+        "z": "4f3004db.7b66bc",
+        "name": "Sensor 8",
+        "topic": "pks/pressing/screw_press_2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "845e9cff.5c3d8",
+        "x": 80,
+        "y": 1400,
+        "wires": [
+            [
+                "76e489f9.890d58",
+                "ba6a884f.014d08"
+            ]
+        ]
+    },
+    {
+        "id": "cd6d26a0.1b12b8",
+        "type": "ui_template",
+        "z": "4f3004db.7b66bc",
+        "group": "4899e7b.beb6818",
+        "name": "HTML Card",
+        "order": 1,
+        "width": "5",
+        "height": "6",
+        "format": "\n<div ng-bind-html=\"(msg.payload==undefined)?'belum ada data..':(msg.payload==0)?msg.deviceName + ' mati':msg.deviceName + ' hidup'\"></div>\n<span  style=\"\n  margin: 0 auto;\n  width: 24px;\n  max-width:24px;\n  height: 24px;\n  max-height:24px;\n  background-color: {{(msg.payload==undefined)?'#949494de':(msg.payload === '0') ? '#F00000' : '#ABFF00'}};\n  border-radius: 50%;\n  box-shadow: {{(msg.payload==undefined)?'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(0,0,0) 0px -1px 9px inset':(msg.payload === '0') ? 'rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset rgb(68, 19, 19) 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px':'rgba(0, 0, 0, 0.2) 0px -1px 7px 1px, rgb(48,71,1) 0px -1px 9px inset, rgb(137,255,0) 0px 2px 12px'}}\">\n    \n</span>\n\n<br>\n\n<img src=\"/pks/screw_press.png\"  height=\"150\">",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 530,
+        "y": 1440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "86042e90.66dfd",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "string for TTS",
+        "func": "msg.payload = (msg.payload==\"0\")?`${msg.deviceName} mati`:`${msg.deviceName} hidup`\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 500,
+        "y": 1480,
+        "wires": [
+            [
+                "36462c40.d851b4"
+            ]
+        ],
+        "info": "Generate string for text to speech"
+    },
+    {
+        "id": "76e489f9.890d58",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "Add msg.deviceName",
+        "func": "function capitalizeFirstLetter(string) {\n    return string.charAt(0).toUpperCase() + string.slice(1);\n}\n\nmsg.deviceName = msg.topic.split('/').pop(-1).replace(/_/g,' ');\nmsg.deviceName = capitalizeFirstLetter(msg.deviceName);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 1400,
+        "wires": [
+            [
+                "cd6d26a0.1b12b8",
+                "86042e90.66dfd"
+            ]
+        ]
+    },
+    {
+        "id": "c2294265.d111b",
+        "type": "comment",
+        "z": "4f3004db.7b66bc",
+        "name": "Screw Press 2",
+        "info": "",
+        "x": 170,
+        "y": 1460,
+        "wires": [],
+        "icon": "node-red/db.png"
+    },
+    {
+        "id": "d4682ec1.7715e",
+        "type": "ui_audio",
+        "z": "4f3004db.7b66bc",
+        "name": "",
+        "group": "ed957222.66e4",
+        "voice": "id-ID",
+        "always": "",
+        "x": 920,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "36462c40.d851b4",
+        "type": "delay",
+        "z": "4f3004db.7b66bc",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "2",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 760,
+        "y": 920,
+        "wires": [
+            [
+                "d4682ec1.7715e"
+            ]
+        ]
+    },
+    {
+        "id": "331df693.9ee23a",
+        "type": "ui_statetrail",
+        "z": "4f3004db.7b66bc",
+        "group": "ed957222.66e4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "states": [
+            {
+                "state": true,
+                "col": "#009933",
+                "t": "bool"
+            },
+            {
+                "state": false,
+                "col": "#999999",
+                "t": "bool"
+            }
+        ],
+        "periodLimit": "5",
+        "periodLimitUnit": "60",
+        "timeformat": "HH:mm",
+        "tickmarks": "4",
+        "x": 520,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "1a7eaa40.5eed36",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "MQTT to HTTP",
+        "func": "msg.payload = {\"data\":`${msg.payload}`,\n\"topic\":`${msg.topic}`}\nmsg.headers = {\"Content-Type\":\"application/json\"}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 300,
+        "y": 120,
+        "wires": [
+            [
+                "8523fefe.0df58"
+            ]
+        ]
+    },
+    {
+        "id": "8523fefe.0df58",
+        "type": "http request",
+        "z": "4f3004db.7b66bc",
+        "name": "HTTP Req",
+        "method": "PUT",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "http://192.168.0.8:3000",
+        "tls": "",
+        "proxy": "",
+        "authType": "basic",
+        "x": 470,
+        "y": 120,
+        "wires": [
+            [
+                "80e1e3f3.c00b8"
+            ]
+        ]
+    },
+    {
+        "id": "f43d3994.d0c918",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "to boolean",
+        "func": "msg.payload = msg.payload==\"1\"?true:false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 240,
+        "wires": [
+            [
+                "331df693.9ee23a"
+            ]
+        ]
+    },
+    {
+        "id": "c3a2894d.843468",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "to boolean",
+        "func": "msg.payload = msg.payload==\"1\"?true:false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 400,
+        "wires": [
+            [
+                "1fc63a06.366446"
+            ]
+        ]
+    },
+    {
+        "id": "1fc63a06.366446",
+        "type": "ui_statetrail",
+        "z": "4f3004db.7b66bc",
+        "group": "f511fd39.bf3c4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "states": [
+            {
+                "state": true,
+                "col": "#009933",
+                "t": "bool"
+            },
+            {
+                "state": false,
+                "col": "#999999",
+                "t": "bool"
+            }
+        ],
+        "periodLimit": "5",
+        "periodLimitUnit": "60",
+        "timeformat": "HH:mm",
+        "tickmarks": "4",
+        "x": 520,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "6eaffb66.279c34",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "to boolean",
+        "func": "msg.payload = msg.payload==\"1\"?true:false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 560,
+        "wires": [
+            [
+                "7df54619.bb8a58"
+            ]
+        ]
+    },
+    {
+        "id": "7df54619.bb8a58",
+        "type": "ui_statetrail",
+        "z": "4f3004db.7b66bc",
+        "group": "20a458a4.b55f98",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "states": [
+            {
+                "state": true,
+                "col": "#009933",
+                "t": "bool"
+            },
+            {
+                "state": false,
+                "col": "#999999",
+                "t": "bool"
+            }
+        ],
+        "periodLimit": "5",
+        "periodLimitUnit": "60",
+        "timeformat": "HH:mm",
+        "tickmarks": "4",
+        "x": 520,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "23d6f661.f4ae5a",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "to boolean",
+        "func": "msg.payload = msg.payload==\"1\"?true:false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 720,
+        "wires": [
+            [
+                "175e6493.e4997b"
+            ]
+        ]
+    },
+    {
+        "id": "175e6493.e4997b",
+        "type": "ui_statetrail",
+        "z": "4f3004db.7b66bc",
+        "group": "818930a8.f8769",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "states": [
+            {
+                "state": true,
+                "col": "#009933",
+                "t": "bool"
+            },
+            {
+                "state": false,
+                "col": "#999999",
+                "t": "bool"
+            }
+        ],
+        "periodLimit": "5",
+        "periodLimitUnit": "60",
+        "timeformat": "HH:mm",
+        "tickmarks": "4",
+        "x": 520,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "c4b151e0.af015",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "to boolean",
+        "func": "msg.payload = msg.payload==\"1\"?true:false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 1040,
+        "wires": [
+            [
+                "4655b92c.2f7578"
+            ]
+        ]
+    },
+    {
+        "id": "4655b92c.2f7578",
+        "type": "ui_statetrail",
+        "z": "4f3004db.7b66bc",
+        "group": "ef6f747d.1cd828",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "states": [
+            {
+                "state": true,
+                "col": "#009933",
+                "t": "bool"
+            },
+            {
+                "state": false,
+                "col": "#999999",
+                "t": "bool"
+            }
+        ],
+        "periodLimit": "5",
+        "periodLimitUnit": "60",
+        "timeformat": "HH:mm",
+        "tickmarks": "4",
+        "x": 520,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "ba760871.6acda8",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "to boolean",
+        "func": "msg.payload = msg.payload==\"1\"?true:false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 1200,
+        "wires": [
+            [
+                "4fbd5367.ed7aac"
+            ]
+        ]
+    },
+    {
+        "id": "4fbd5367.ed7aac",
+        "type": "ui_statetrail",
+        "z": "4f3004db.7b66bc",
+        "group": "d68756d3.3a5e88",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "states": [
+            {
+                "state": true,
+                "col": "#009933",
+                "t": "bool"
+            },
+            {
+                "state": false,
+                "col": "#999999",
+                "t": "bool"
+            }
+        ],
+        "periodLimit": "5",
+        "periodLimitUnit": "60",
+        "timeformat": "HH:mm",
+        "tickmarks": "4",
+        "x": 520,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "ba6a884f.014d08",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "to boolean",
+        "func": "msg.payload = msg.payload==\"1\"?true:false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 1360,
+        "wires": [
+            [
+                "2b4f8088.33963"
+            ]
+        ]
+    },
+    {
+        "id": "2b4f8088.33963",
+        "type": "ui_statetrail",
+        "z": "4f3004db.7b66bc",
+        "group": "4899e7b.beb6818",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "states": [
+            {
+                "state": true,
+                "col": "#009933",
+                "t": "bool"
+            },
+            {
+                "state": false,
+                "col": "#999999",
+                "t": "bool"
+            }
+        ],
+        "periodLimit": "5",
+        "periodLimitUnit": "60",
+        "timeformat": "HH:mm",
+        "tickmarks": "4",
+        "x": 520,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "b8d0d36.450db3",
+        "type": "function",
+        "z": "4f3004db.7b66bc",
+        "name": "to boolean",
+        "func": "msg.payload = msg.payload==\"1\"?true:false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 880,
+        "wires": [
+            [
+                "f19df7a2.cd36e8"
+            ]
+        ]
+    },
+    {
+        "id": "f19df7a2.cd36e8",
+        "type": "ui_statetrail",
+        "z": "4f3004db.7b66bc",
+        "group": "50600fe3.4a0ea",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "states": [
+            {
+                "state": true,
+                "col": "#009933",
+                "t": "bool"
+            },
+            {
+                "state": false,
+                "col": "#999999",
+                "t": "bool"
+            }
+        ],
+        "periodLimit": "5",
+        "periodLimitUnit": "60",
+        "timeformat": "HH:mm",
+        "tickmarks": "4",
+        "x": 520,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "bd49b1ec.c8e0e",
+        "type": "mqtt in",
+        "z": "2a08aebc.39ea02",
+        "name": "Sensor 9",
+        "topic": "pks/tanks/cpo_tank",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "7db5f3c3.81584c",
+        "x": 280,
+        "y": 260,
+        "wires": [
+            [
+                "1b28e25.474701e",
+                "2b52d909.534216"
+            ]
+        ]
+    },
+    {
+        "id": "aedf4ae5.7a95b8",
+        "type": "comment",
+        "z": "2a08aebc.39ea02",
+        "name": "Storage Tank",
+        "info": "",
+        "x": 370,
+        "y": 320,
+        "wires": [],
+        "icon": "node-red/db.png"
+    },
+    {
+        "id": "1b28e25.474701e",
+        "type": "ui_gauge",
+        "z": "2a08aebc.39ea02",
+        "name": "",
+        "group": "748efcbb.e41534",
+        "order": 1,
+        "width": "5",
+        "height": "4",
+        "gtype": "wave",
+        "title": "",
+        "label": "Liter",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 710,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "2b52d909.534216",
+        "type": "ui_chart",
+        "z": "2a08aebc.39ea02",
+        "name": "",
+        "group": "748efcbb.e41534",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Belum ada data..",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 710,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    }
+]
